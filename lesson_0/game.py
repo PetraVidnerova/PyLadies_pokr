@@ -25,7 +25,8 @@ def statistics(name):
                 times.append(time_for_correct)
     except FileNotFoundError:
         print("Statistika nenalezana. Asi jsi nový hráč.")
-
+        return
+    
     print("Procento správných odpovědí:")
     for i, perc in enumerate(correct_percentage):
         print(f"{i:>3}: ", "\N{MEDIUM SHADE}"*int(perc))
