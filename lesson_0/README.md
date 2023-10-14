@@ -20,9 +20,11 @@
 
 
 ## Co je nového:
+  - možnosti formátování čísla v f-stringu (zarovnání intu na daný počet pozic)
+  
   - ukážeme si použití `time.time()`
 
-  - __name__ a "__main__"
+  - `__name__` a `"__main__"`
 
  - ukážeme si použití `map`
 
