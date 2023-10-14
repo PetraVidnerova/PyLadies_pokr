@@ -1,6 +1,8 @@
 def yes_or_no(question):
     while True:
         response = input(question+" A/N ")
+        if not response:
+            continue
         first_letter = response[0].upper()
         if first_letter == "A":
             return True
