@@ -18,7 +18,7 @@ def statistics(name):
     times = [] 
 
     try:
-        with open(name+".txt", "r") as f:
+        with open(name+".txt", "r", encoding="utf-8") as f:
             for line in f:
                 correct, incorrect, time_for_correct = map(float, line.split(","))
                 correct_percentage.append(100*correct/(correct+incorrect))
