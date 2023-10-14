@@ -111,7 +111,7 @@ def main():
 
 
     while path_repo:
-        path = path_repo.pop()
+        path = path_repo.pop(0)
 
         print(f"Cesta délky {path.len()}. Zkusíme skočit dál.") 
         
