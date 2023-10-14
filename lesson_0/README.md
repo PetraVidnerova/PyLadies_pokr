@@ -1,5 +1,11 @@
 # Zahřívací hodina
 
+![hra](obr/nabosilka.png)
+
+![statistika](obr/statistika.png)
+
+
+
 1. Malá násobilka
    - naprogramuj hru, která bude zkoušet hráče z malé násobilky
    - příklady se budou generovat náhodně
