@@ -1,6 +1,6 @@
 # Prohledávání stavového prostoru
 
- in progress
+ in progress, todo: mozna do toho radsi neplest objekty
 
 zkuste si rozdil `path_repo.pop()` a `path_repo.pop(0)`
 
