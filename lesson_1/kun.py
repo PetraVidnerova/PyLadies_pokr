@@ -43,10 +43,32 @@ def print_board(size, horse, goal):
                     print("\N{White Large Square}", end="")
         print()
 
+def print_path(size, path, goal):
+    for x in range(size):
+        for y in range(size):
+            # if (x, y) == horse:
+            #     print("\N{Horse}", end="")
+            if (x, y) == path[-1]:
+                print("\N{Horse}", end="")
+            elif (x, y) == goal:
+                print("\N{Crown}", end="")
+            elif (x, y) in path:
+                i = path.index((x, y))
+                if i!=len(path)-1:
+                    print(i, end=" ")
+            else:
+                remainder = 1 if y % 2 == 0 else 0
+                if x % 2 == remainder:
+                    print("\N{Black Large Square}", end="")
+                else:
+                    print("\N{White Large Square}", end="")
+        print()
+
+        
 def animate_path(path):
-    for horse in path:
-        print_board(SIZE, horse, GOAL)
-        if horse != GOAL:
+    for i, _ in enumerate(path):
+        print_path(SIZE, path[:i+1], GOAL)
+        if path[i] != GOAL:
             input(" Stiskni Enter ...")
 
 def main():
